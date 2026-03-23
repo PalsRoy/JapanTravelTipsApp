@@ -1,0 +1,464 @@
+{
+  "categories": [
+    {
+      "id": "before-you-travel",
+      "title": "Before You Travel",
+      "icon": "✈️",
+      "color": "#6C5CE7",
+      "tips": [
+        {
+          "id": "book-early",
+          "title": "Book Early",
+          "emoji": "📕",
+          "content": "Hotels and major attractions sell out super fast! Book accommodations, restaurants requiring reservations, and popular activities (like Shibuya Sky, TeamLab Borderless, Studio Ghibli Museum, etc.) weeks or even months in advance. Last-minute bookings mean higher prices!"
+        },
+        {
+          "id": "esim",
+          "title": "Purchase an eSIM",
+          "emoji": "📱",
+          "content": "Most convenient way to use data — having an eSIM handy will make your whole trip so much smoother! Instant setup, no physical SIM swap needed. Airalo is a popular option."
+        },
+        {
+          "id": "visit-japan-web",
+          "title": "Japan Arrival QR Code",
+          "emoji": "🛫",
+          "content": "Complete your immigration & customs forms online before arriving in Japan to speed up the process! Register your details at Visit Japan Web. Once complete, you'll get a QR code to scan at immigration. This service is required for anyone entering Japan from overseas, and it allows you to complete arrival procedures (immigration, customs) and register for tax-free shopping — all in advance!"
+        }
+      ]
+    },
+    {
+      "id": "prepare-beforehand",
+      "title": "Prepare Beforehand",
+      "icon": "📝",
+      "color": "#E17055",
+      "tips": [
+        {
+          "id": "learn-phrases",
+          "title": "Learn 3 Essential Phrases",
+          "emoji": "💬",
+          "content": "こんにちは (konnichiwa) — hello\nありがとうございます (arigatou gozaimasu) — thank you\nすみません (sumimasen) — excuse me/sorry\n\nJapanese locals will truly appreciate the effort!"
+        },
+        {
+          "id": "bring-cash",
+          "title": "Using Cash in Japan",
+          "emoji": "💰",
+          "content": "Bring cash! Many small shops and restaurants are still cash-only. You'll accumulate lots of coins in Japan — make sure you bring a coin purse! PRO-TIP: Buy the coin separator from DAISO to organize all your coins!"
+        },
+        {
+          "id": "google-translate",
+          "title": "Google Translate",
+          "emoji": "🌐",
+          "content": "Your ultimate travel buddy in Japan! Make sure to download Japanese for offline use — super handy for translating menus with the camera or communicating with locals!"
+        }
+      ]
+    },
+    {
+      "id": "key-apps",
+      "title": "Download Key Apps",
+      "icon": "📲",
+      "color": "#00B894",
+      "tips": [
+        {
+          "id": "klook",
+          "title": "Klook",
+          "emoji": "🎫",
+          "content": "For tickets, passes & booking activities in Japan."
+        },
+        {
+          "id": "payke",
+          "title": "Payke",
+          "emoji": "📦",
+          "content": "Scan products to see details in English."
+        },
+        {
+          "id": "flush",
+          "title": "FLUSH",
+          "emoji": "🚻",
+          "content": "Find the nearest toilets."
+        },
+        {
+          "id": "tabelog",
+          "title": "Tabelog",
+          "emoji": "🍽️",
+          "content": "Restaurant reviews from Japanese locals. The go-to review site locals trust! Japanese reviewers are quite strict: 3.2–3.4 = very good, 3.5+ = excellent."
+        },
+        {
+          "id": "taxfreeshops",
+          "title": "TaxFreeShops.io",
+          "emoji": "🛍️",
+          "content": "For stores that offer tax-free shopping!"
+        },
+        {
+          "id": "airalo",
+          "title": "Airalo",
+          "emoji": "📶",
+          "content": "For your eSIM."
+        },
+        {
+          "id": "converter",
+          "title": "Converter",
+          "emoji": "💱",
+          "content": "For currency rates (or use your calculator)."
+        },
+        {
+          "id": "chargespot",
+          "title": "ChargeSPOT",
+          "emoji": "🔋",
+          "content": "Rent portable chargers on the go."
+        },
+        {
+          "id": "mymizu",
+          "title": "mymizu",
+          "emoji": "💧",
+          "content": "Find nearby water refill stations."
+        },
+        {
+          "id": "essential-apps",
+          "title": "Other Essentials",
+          "emoji": "⭐",
+          "content": "Don't forget: Google Translate, Google Maps, and a SUICA card!"
+        }
+      ]
+    },
+    {
+      "id": "accommodation",
+      "title": "Finding the Perfect Stay",
+      "icon": "🏨",
+      "color": "#FDCB6E",
+      "tips": [
+        {
+          "id": "choosing-accommodation",
+          "title": "Choosing Accommodation",
+          "emoji": "🏠",
+          "content": "Finding the right place to stay can truly make or break your trip! Options include: Ryokans, Hotels, Capsule stays, and Airbnbs."
+        },
+        {
+          "id": "hotel-size",
+          "title": "Hotels are Small",
+          "emoji": "📏",
+          "content": "Keep in mind: hotels in Japan tend to be quite small — which is why many opt to spend more for a larger & comfortable room."
+        },
+        {
+          "id": "location-is-key",
+          "title": "Location is Key",
+          "emoji": "📍",
+          "content": "Most importantly, LOCATION IS KEY! Prioritize staying near a train station to save travel time, and consider proximity to shopping & convenience stores."
+        },
+        {
+          "id": "amenities",
+          "title": "Check Amenities & Perks",
+          "emoji": "✨",
+          "content": "PRO-TIP: Check for amenities & perks offered, such as direct limousine bus, luggage storage, and on-site lockers — these small conveniences will make a huge difference on your trip!"
+        }
+      ]
+    },
+    {
+      "id": "planning-your-trip",
+      "title": "Planning Your Trip",
+      "icon": "🗺️",
+      "color": "#0984E3",
+      "tips": [
+        {
+          "id": "dont-overpack-itinerary",
+          "title": "Don't Overpack Your Itinerary",
+          "emoji": "📋",
+          "content": "Japan is huge, and it's easy to get overwhelmed if you try to do too much in one day. The best memories often come from spontaneous adventures — cute neighborhoods, hidden cafés, or stumbling upon a hidden gem!\n\nPRO-TIP: Leave the last 2–3 days of your trip unplanned! This way you can revisit favorite spots, explore neighborhoods more intentionally, or squeeze in any activities you missed earlier. Less stress = more fun."
+        },
+        {
+          "id": "airport-transfer",
+          "title": "Plan Your Airport Transfer",
+          "emoji": "🚌",
+          "content": "Figuring out how to get from the airport to your hotel is key! The Airport Limousine Bus is highly recommended — super convenient, comfortable, and you don't have to worry about hauling your luggage through busy train stations!\n\nAvoid taxis if you can — they're very expensive!"
+        }
+      ]
+    },
+    {
+      "id": "transportation",
+      "title": "Japan's Transportation System",
+      "icon": "🚆",
+      "color": "#E84393",
+      "tips": [
+        {
+          "id": "transport-tips",
+          "title": "Transportation Tips",
+          "emoji": "🚃",
+          "content": "Trains are on time to the minute — stand in line markers.\nConsider buses over trains! Buses are easier to locate — no need to go underground.\nKeep voices low on trains. No eating (unless you're on the Shinkansen).\nGoogle Maps is your best friend — it will tell you everything you need to know!"
+        },
+        {
+          "id": "subway-ticket",
+          "title": "Tokyo Subway Ticket",
+          "emoji": "🎫",
+          "content": "Worth it if you'll be using the subway a lot! ¥1,500 (~$15) for 3 days of unlimited rides on both Tokyo Metro & Toei Subway lines."
+        },
+        {
+          "id": "jr-pass",
+          "title": "JR Pass",
+          "emoji": "🚅",
+          "content": "Only consider if you're traveling between multiple cities (e.g. Tokyo → Osaka → Kyoto) but even so, the price increase has made it rarely worth it. Use the Japan Rail Calculator before buying!"
+        }
+      ]
+    },
+    {
+      "id": "travel-smart",
+      "title": "Travel Smart in Japan",
+      "icon": "🧠",
+      "color": "#00CEC9",
+      "tips": [
+        {
+          "id": "walking",
+          "title": "Prepare to Walk 20K+ Steps",
+          "emoji": "👟",
+          "content": "While you're in Japan you'll be walking LOTS! PLEASE make sure you invest in a comfy pair of walking shoes. New Balance is a popular go-to pair of sneakers. ASICS also gets great reviews!\n\nPRO-TIP: If your feet ache after a long day, try Japanese detox cooling foot patches overnight — your feet will seriously thank you the next morning."
+        },
+        {
+          "id": "tax-free",
+          "title": "Bring Your Passport for Tax-Free Shopping",
+          "emoji": "🛍️",
+          "content": "Many stores in Japan offer tax-free shopping (for purchases over ¥5,000) — just make sure you have your passport ready at checkout!\n\nNote: Items sealed in a \"tax-free\" bag cannot be opened until you leave Japan.\n\nImportant Update: Starting on November 1, 2026, customers will have to pay the full tax inclusive price in-store & can only claim their tax refund at the airport before departure."
+        }
+      ]
+    },
+    {
+      "id": "packing-tips",
+      "title": "Packing Tips",
+      "icon": "🧳",
+      "color": "#FFA502",
+      "tips": [
+        {
+          "id": "travel-light",
+          "title": "Travel Light, Shop Heavy!",
+          "emoji": "🧳",
+          "content": "Either pack super light, bring an empty suitcase, or plan to buy luggage in Japan — you won't regret it! You'll be able to shop freely with peace of mind."
+        },
+        {
+          "id": "duffel-bag",
+          "title": "Buy a Duffel Bag",
+          "emoji": "👜",
+          "content": "PRO-TIP: Buy a duffel bag in Japan to pack all your clothes, so you can keep your souvenirs safe in your hard luggage! Plus duffels are lighter — meaning more room for shopping goodies."
+        },
+        {
+          "id": "harajuku-baggage",
+          "title": "Harajuku Baggage Outlet Mall",
+          "emoji": "💡",
+          "content": "TIP: If you're in Tokyo, check out Harajuku Baggage Outlet Mall — they often have 50% off suitcases (way cheaper than Don Quijote!)"
+        }
+      ]
+    },
+    {
+      "id": "luggage-hacks",
+      "title": "Luggage Travel Hacks",
+      "icon": "🎒",
+      "color": "#A29BFE",
+      "tips": [
+        {
+          "id": "yamato-transport",
+          "title": "Luggage Transport — Travel Hands-Free!",
+          "emoji": "📦",
+          "content": "If you're traveling with a ton of luggage or want to send your luggage directly to the airport or hotel, consider using Yamato Transport (Takkyubin). They'll deliver your luggage to your next destination for convenient & stress-free travel. Send from a participating 7-Eleven or directly from your hotel!"
+        },
+        {
+          "id": "google-maps-accessibility",
+          "title": "Google Maps — Skip the Stairs!",
+          "emoji": "♿",
+          "content": "If you're traveling between cities like Osaka and Kyoto, lugging your baggage around train stations is going to be exhausting and stressful (especially on crowded trains).\n\nPRO-TIP: Turn on \"Wheelchair Accessibility\" in Google Maps — it will show you entrances & exits with elevators!"
+        }
+      ]
+    },
+    {
+      "id": "etiquette",
+      "title": "Social & Cultural Etiquette",
+      "icon": "🎌",
+      "color": "#D63031",
+      "tips": [
+        {
+          "id": "carry-garbage",
+          "title": "Carry Your Own Garbage",
+          "emoji": "🗑️",
+          "content": "In Japan, littering is strictly prohibited. Make sure you carry a plastic bag with you for your trash. If you need to toss something out, look for a nearby 7-Eleven or convenience store — some have waste bin areas for proper disposal."
+        },
+        {
+          "id": "be-quiet",
+          "title": "Be Quiet & Respectful",
+          "emoji": "🤫",
+          "content": "Japan values peaceful public spaces — especially on trains and cafés! Keeping your voice low (and your phone on silent) is a small but meaningful way to show respect."
+        },
+        {
+          "id": "walking-etiquette",
+          "title": "Walking Etiquette",
+          "emoji": "🚶",
+          "content": "In Japan, walk on the left side of sidewalks (similar to how cars drive on the left).\n\nEscalators: In Tokyo, stand on the left & walk on the right. In Osaka, stand on the right.\n\nWhen in doubt, follow the locals!\n\nAvoid eating or drinking while walking — it's considered bad-mannered. Stand aside to finish your snack!"
+        }
+      ]
+    },
+    {
+      "id": "money-payment",
+      "title": "Money & Payment Tips",
+      "icon": "💴",
+      "color": "#636E72",
+      "tips": [
+        {
+          "id": "no-tipping",
+          "title": "No Tipping",
+          "emoji": "🚫",
+          "content": "Tipping is not customary in Japan — it can actually be considered rude or awkward. Service staff are trained to provide exceptional service without expecting extra payment."
+        },
+        {
+          "id": "cash-tray",
+          "title": "Place Cash on the Tray",
+          "emoji": "💰",
+          "content": "When paying with cash, always put your money on the tray at the counter — don't hand it directly to the cashier.\n\nPRO-TIP: Some stores have automated registers that count your coins for you, making checkout super easy!"
+        },
+        {
+          "id": "credit-card",
+          "title": "Using Credit Card in Japan",
+          "emoji": "💳",
+          "content": "When paying by card, some stores may ask if you'd like to be charged in your home currency instead of Japanese yen — this is called Dynamic Currency Conversion.\n\nPRO-TIP: Always choose YEN (¥)! It's almost always cheaper and helps you avoid hidden conversion fees."
+        }
+      ]
+    },
+    {
+      "id": "shopping",
+      "title": "Japan: A Shopper's Paradise",
+      "icon": "🛒",
+      "color": "#E056A0",
+      "tips": [
+        {
+          "id": "shop-till-you-drop",
+          "title": "Shop Till You Drop",
+          "emoji": "🛍️",
+          "content": "There's a reason why people always say pack light for Japan — you can find everything here! From clothing and electronics to beauty, makeup, and haircare, Japan has it all.\n\nClothes here are often more affordable and perfectly suited for Asian styles & petite fits. Uniqlo & GU (Uniqlo's sister brand) are popular picks!\n\nGinza → luxury & high-end\nHarajuku → all things cute & trendy\nShibuya → all-around shopping & exploring\nShimokitazawa → thrifting"
+        },
+        {
+          "id": "designer-lovers",
+          "title": "For Designer Lovers",
+          "emoji": "👜",
+          "content": "If you're a designer-lover, Japan is the spot! Their pre-loved luxury stores are a treasure trove of authentic finds at amazing prices!"
+        }
+      ]
+    },
+    {
+      "id": "souvenirs",
+      "title": "Save Money on Souvenirs",
+      "icon": "🎁",
+      "color": "#F39C12",
+      "tips": [
+        {
+          "id": "pharmacies-first",
+          "title": "Buy at Pharmacies First",
+          "emoji": "💊",
+          "content": "Before splurging at Don Quijote for souvenirs, snacks, or beauty products, check out local pharmacies & drugstores first (ie. OS Drug & Daikoku!). Prices are typically much cheaper.\n\nPRO-TIP: Save Donki for your last day for items you couldn't find elsewhere!"
+        },
+        {
+          "id": "don-quijote",
+          "title": "Don Quijote Tips",
+          "emoji": "🏪",
+          "content": "Don Quijote is a one-stop shop for everything — visit during off-peak hours to avoid the crowds! Otherwise, the sheer volume of goods can get overwhelming.\n\nKeep in mind: MEGA Donki stores can have 7 floors and are open 24/7!"
+        },
+        {
+          "id": "last-minute-souvenirs",
+          "title": "Last-Minute Souvenirs",
+          "emoji": "✈️",
+          "content": "Don't stress if your souvenir hunt isn't complete! You can buy last-minute souvenirs at the airport's duty-free shops."
+        }
+      ]
+    },
+    {
+      "id": "konbini",
+      "title": "24/7 Convenience Stores",
+      "icon": "🏪",
+      "color": "#2ED573",
+      "tips": [
+        {
+          "id": "konbini-culture",
+          "title": "Japan's Konbini Culture",
+          "emoji": "🍙",
+          "content": "Open 24/7, konbini (convenience stores) are everywhere in Japan! 7-Eleven, Family Mart, Lawson — they offer fresh, high-quality meals & snacks, perfect for early morning bites or late-night cravings.\n\nPRO-TIP: Many restaurants in Japan don't open until 10–11AM, so if you need a quick breakfast or snack, hit up the convenience stores!\n\nYou can conveniently reload your SUICA card at any konbini."
+        },
+        {
+          "id": "must-try-konbini",
+          "title": "Must-Try Konbini Items",
+          "emoji": "⭐",
+          "content": "Onigiri\nEgg or fruit sando\nFamichiki (Family Mart fried chicken)\nJapanese Sweets/Desserts\nInstant ramen"
+        }
+      ]
+    },
+    {
+      "id": "food-tips",
+      "title": "Local Gems Over TikTok Trends",
+      "icon": "🍜",
+      "color": "#FF6348",
+      "tips": [
+        {
+          "id": "avoid-viral-spots",
+          "title": "Don't Fall for Viral Food Spots",
+          "emoji": "🚫",
+          "content": "You don't have to hit up every TikTok viral restaurant in Japan or spend hours waiting in line — time is precious on your trip! There are so many local gems everywhere you go. Often the best food spots are the ones you end up stumbling upon randomly!\n\nInstead, plan your meals based on the activities or neighborhoods you'll be exploring that day."
+        },
+        {
+          "id": "use-tabelog",
+          "title": "Use Tabelog Instead of Google Maps",
+          "emoji": "📱",
+          "content": "PRO-TIP: Use Tabelog instead of Google Maps — it's the go-to review site locals trust! Japanese reviewers are known to be quite strict, which means:\n\n3.2–3.4 = very good\n3.5+ = excellent\n\nUse the browser version of Tabelog (available in English) and click \"near me\" to discover restaurants nearby!"
+        }
+      ]
+    },
+    {
+      "id": "smart-living",
+      "title": "Japan's Smart Living",
+      "icon": "🤖",
+      "color": "#1ABC9C",
+      "tips": [
+        {
+          "id": "high-tech-toilets",
+          "title": "High-Tech Toilets",
+          "emoji": "🚽",
+          "content": "Japan's toilets are on another level! Most come with: heated seats, built-in bidets & air dryers, and background music for privacy. You'll find them in homes, malls, & even public restrooms — all spotless & high-tech!"
+        },
+        {
+          "id": "suica-card",
+          "title": "SUICA Card",
+          "emoji": "💳",
+          "content": "The Suica card is a prepaid smart card you can download onto your digital wallet. Reload before your trip to save time. Tap for trains, buses & subways — no need to unlock your phone! You can even use it at convenience stores, claw machines & vending machines."
+        },
+        {
+          "id": "order-efficiency",
+          "title": "Art of Order & Efficiency",
+          "emoji": "🎯",
+          "content": "Japan has a system for everything, which is why things run so efficiently! Many restaurants use kiosks or ticket machines for ordering, and when it comes to lineups, everyone queues neatly and waits patiently."
+        }
+      ]
+    },
+    {
+      "id": "during-your-trip",
+      "title": "During Your Trip",
+      "icon": "🎯",
+      "color": "#FF69B4",
+      "tips": [
+        {
+          "id": "claw-machines",
+          "title": "Claw Machines in Japan",
+          "emoji": "🕹️",
+          "content": "Look for claw machine arcades that are 100¥ per play instead of 200¥!\n\nStruggling to win? Ask the arcade staff to reposition the prize — sometimes a little nudge is all you need if it's close to the edge."
+        },
+        {
+          "id": "weather-prep",
+          "title": "Prepare for the Weather",
+          "emoji": "☂️",
+          "content": "Compact umbrella (rain can pop up anytime & can be light/heavy)\nLight pockets/jackets & layers\nPortable fan or cooling wipes if visiting in summer (it gets humid)\nComfy waterproof shoes — lots of walking + occasional rain\nMini towel or tissues — for wiping sweat\nWater bottle — to stay hydrated"
+        },
+        {
+          "id": "airport-departure",
+          "title": "Allow Extra Time at the Airport",
+          "emoji": "🛫",
+          "content": "Give yourself at least 3 hours before your flight when departing Japan! Airports like Haneda and Narita are massive — with tons of shopping, restaurants, and Duty-Free stores to explore!\n\nIt's the perfect chance to grab any last-minute souvenirs like ROYCE Nama Chocolate, Tokyo Banana, Choya Umeshu (plum wine), or Japanese Kit Kats!"
+        },
+        {
+          "id": "game-panic",
+          "title": "Arcade Tip",
+          "emoji": "🎮",
+          "content": "Go to Game Panic instead of GiGO or Taito Station — it's cheaper & tends to have better prizes and more fun!"
+        }
+      ]
+    }
+  ]
+}
