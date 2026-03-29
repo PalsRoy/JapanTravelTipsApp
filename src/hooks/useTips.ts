@@ -2,19 +2,20 @@ import { useQuery } from '@tanstack/react-query';
 import tipsData from '../data/tips.json';
 import { TipsData, Category, Tip } from '../types';
 
-// Simulate async fetch (makes it easy to swap to a remote API later)
+const typedTipsData = tipsData as TipsData;
+
+// Use initialData so content appears immediately — no loading spinner needed
 const fetchTips = async (): Promise<TipsData> => {
-  return new Promise((resolve) => {
-    setTimeout(() => resolve(tipsData as TipsData), 100);
-  });
+  return typedTipsData;
 };
 
 export function useAllCategories() {
   return useQuery({
     queryKey: ['categories'],
     queryFn: fetchTips,
-    staleTime: Infinity, // Local data never goes stale
+    staleTime: Infinity,
     gcTime: Infinity,
+    initialData: typedTipsData,
     select: (data) => data.categories,
   });
 }
@@ -25,6 +26,7 @@ export function useCategory(categoryId: string) {
     queryFn: fetchTips,
     staleTime: Infinity,
     gcTime: Infinity,
+    initialData: typedTipsData,
     select: (data) =>
       data.categories.find((c: Category) => c.id === categoryId) ?? null,
   });
@@ -36,6 +38,7 @@ export function useSearchTips(query: string) {
     queryFn: fetchTips,
     staleTime: Infinity,
     gcTime: Infinity,
+    initialData: typedTipsData,
     select: (data) => {
       if (!query.trim()) return [];
       const lowerQuery = query.toLowerCase();
@@ -65,6 +68,7 @@ export function useTipCount() {
     queryFn: fetchTips,
     staleTime: Infinity,
     gcTime: Infinity,
+    initialData: typedTipsData,
     select: (data) =>
       data.categories.reduce(
         (acc: number, cat: Category) => acc + cat.tips.length,

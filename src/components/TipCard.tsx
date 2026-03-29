@@ -1,7 +1,7 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Platform } from 'react-native';
 import { Tip } from '../types';
-import { Theme } from '../theme';
+import { Theme, glassCard } from '../theme';
 
 interface TipCardProps {
   tip: Tip;
@@ -22,25 +22,30 @@ export default function TipCard({
     <View
       style={[
         styles.card,
-        {
-          backgroundColor: theme.surface,
-          borderColor: theme.border,
-          shadowColor: theme.cardShadow,
-        },
+        glassCard(theme),
+        { borderRadius: 24 },
       ]}
     >
+      {/* Top glow */}
+      <View style={[styles.topGlow, { backgroundColor: categoryColor + '15' }]} />
+
       <View style={styles.header}>
         <View
-          style={[styles.emojiContainer, { backgroundColor: categoryColor + '18' }]}
+          style={[styles.emojiContainer, { backgroundColor: categoryColor + '20' }]}
         >
           <Text style={styles.emoji}>{tip.emoji}</Text>
         </View>
-        <Text style={[styles.counter, { color: theme.textTertiary }]}>
-          {index + 1} / {total}
-        </Text>
+        <View style={[styles.counterPill, { backgroundColor: theme.chipBackground }]}>
+          <Text style={[styles.counter, { color: theme.textTertiary }]}>
+            {index + 1}/{total}
+          </Text>
+        </View>
       </View>
+
       <Text style={[styles.title, { color: theme.text }]}>{tip.title}</Text>
-      <View style={[styles.divider, { backgroundColor: categoryColor + '30' }]} />
+
+      <View style={[styles.divider, { backgroundColor: categoryColor + '25' }]} />
+
       <Text style={[styles.content, { color: theme.textSecondary }]}>
         {tip.content}
       </Text>
@@ -50,45 +55,53 @@ export default function TipCard({
 
 const styles = StyleSheet.create({
   card: {
-    borderRadius: 20,
-    padding: 24,
     marginHorizontal: 16,
     marginVertical: 8,
-    borderWidth: 1,
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.08,
-    shadowRadius: 12,
-    elevation: 3,
+    padding: 24,
+    overflow: 'hidden',
+    position: 'relative',
+  },
+  topGlow: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    height: 100,
   },
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 16,
+    marginBottom: 18,
   },
   emojiContainer: {
-    width: 44,
-    height: 44,
-    borderRadius: 12,
+    width: 48,
+    height: 48,
+    borderRadius: 14,
     justifyContent: 'center',
     alignItems: 'center',
   },
   emoji: {
-    fontSize: 22,
+    fontSize: 24,
+  },
+  counterPill: {
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    borderRadius: 10,
   },
   counter: {
-    fontSize: 13,
-    fontWeight: '600',
+    fontSize: 12,
+    fontWeight: '700',
   },
   title: {
-    fontSize: 20,
+    fontSize: 22,
     fontWeight: '800',
-    marginBottom: 12,
-    lineHeight: 26,
+    marginBottom: 14,
+    lineHeight: 28,
+    letterSpacing: -0.3,
   },
   divider: {
-    height: 2,
-    borderRadius: 1,
+    height: 1,
     marginBottom: 16,
   },
   content: {

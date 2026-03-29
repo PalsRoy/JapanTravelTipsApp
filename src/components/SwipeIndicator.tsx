@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Platform } from 'react-native';
 import { Theme } from '../theme';
 
 interface SwipeIndicatorProps {
@@ -25,6 +25,13 @@ export default function SwipeIndicator({
             {
               backgroundColor: i === current ? color : theme.border,
               width: i === current ? 24 : 8,
+              opacity: i === current ? 1 : 0.5,
+            },
+            i === current && Platform.OS === 'ios' && {
+              shadowColor: color,
+              shadowOffset: { width: 0, height: 0 },
+              shadowOpacity: 0.6,
+              shadowRadius: 6,
             },
           ]}
         />

@@ -1,0 +1,320 @@
+{
+  "itineraries": [
+    {
+      "id": "tokyo-kyoto-5day",
+      "title": "Tokyo & Kyoto",
+      "subtitle": "5-day adventure",
+      "duration": "5 days",
+      "color": "#E84393",
+      "cities": [
+        "Tokyo",
+        "Kyoto"
+      ],
+      "days": [
+        {
+          "dayNumber": 1,
+          "city": "Tokyo",
+          "title": "Arrival & Shibuya",
+          "activities": [
+            {
+              "time": "Morning",
+              "emoji": "✈️",
+              "title": "Arrive at Haneda Airport"
+            },
+            {
+              "time": "Morning",
+              "emoji": "⛩️",
+              "title": "Visit Meiji Jingu Shrine"
+            },
+            {
+              "time": "Late Morning",
+              "emoji": "🛍️",
+              "title": "Explore Takeshita Street"
+            },
+            {
+              "time": "Late Morning",
+              "emoji": "🛍️",
+              "title": "Shopping at Cat Street and Kiddy Land"
+            },
+            {
+              "time": "Lunch",
+              "emoji": "🍝",
+              "title": "Lunch at Menchirashi",
+              "note": "Carbonara Udon"
+            },
+            {
+              "time": "Afternoon",
+              "emoji": "🚶",
+              "title": "Walk to Shibuya and visit Miyashita Park"
+            },
+            {
+              "time": "Afternoon",
+              "emoji": "🍵",
+              "title": "Grab Matcha latte from The Matcha Tokyo"
+            },
+            {
+              "time": "Afternoon",
+              "emoji": "📸",
+              "title": "Shibuya Scramble"
+            },
+            {
+              "time": "Afternoon",
+              "emoji": "🛍️",
+              "title": "Shopping at Shibuya Parco",
+              "note": "Pokemon center, Nintendo Store, Jump Shop etc."
+            },
+            {
+              "time": "Evening",
+              "emoji": "🌅",
+              "title": "Enjoy the sunset at Shibuya Sky"
+            },
+            {
+              "time": "Dinner",
+              "emoji": "🥩",
+              "title": "Dine at Gyukatsu Motomura Shinjuku"
+            },
+            {
+              "time": "Night",
+              "emoji": "🍻",
+              "title": "Enjoy a drink in Golden Gai"
+            },
+            {
+              "time": "Night",
+              "emoji": "🛒",
+              "title": "Night Shopping at Don Quijote"
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "city": "Tokyo",
+          "title": "Ginza & TeamLab",
+          "activities": [
+            {
+              "time": "Breakfast",
+              "emoji": "🐟",
+              "title": "Breakfast at Tsukiji Fish Market"
+            },
+            {
+              "time": "Morning",
+              "emoji": "🚶",
+              "title": "Walk to Ginza"
+            },
+            {
+              "time": "Morning",
+              "emoji": "👟",
+              "title": "Get customized Onitsuka Tiger at Ginza RED store",
+              "note": "Go before the store opens at 11"
+            },
+            {
+              "time": "Lunch",
+              "emoji": "🥩",
+              "title": "Lunch at GYU-AN GINZA",
+              "note": "Affordable A5 Wagyu Beef"
+            },
+            {
+              "time": "Afternoon",
+              "emoji": "🛍️",
+              "title": "Shopping at UNIQLO, GINZA SIX, ITOYA, MUJI, GU, LOFT etc."
+            },
+            {
+              "time": "Afternoon",
+              "emoji": "☕",
+              "title": "Grab coffee at BONGEN COFFEE"
+            },
+            {
+              "time": "Evening",
+              "emoji": "🎨",
+              "title": "Visit teamLab Borderless"
+            },
+            {
+              "time": "Evening",
+              "emoji": "📸",
+              "title": "Take a pic with Tokyo Tower"
+            },
+            {
+              "time": "Dinner",
+              "emoji": "🍜",
+              "title": "Grab Ramen at Ramen Mozu"
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "city": "Tokyo",
+          "title": "Asakusa & Sky Tree",
+          "activities": [
+            {
+              "time": "Breakfast",
+              "emoji": "🍳",
+              "title": "Breakfast at Misojyu Asakusa"
+            },
+            {
+              "time": "Morning",
+              "emoji": "☕",
+              "title": "Morning Coffee at Fuglen Asakusa"
+            },
+            {
+              "time": "Morning",
+              "emoji": "⛩️",
+              "title": "Visit Senso-ji Temple"
+            },
+            {
+              "time": "Late Morning",
+              "emoji": "🍢",
+              "title": "Explore Nakamise Street and try street food"
+            },
+            {
+              "time": "Afternoon",
+              "emoji": "🌳",
+              "title": "Chill at Sumida Park"
+            },
+            {
+              "time": "Lunch",
+              "emoji": "🍣",
+              "title": "Lunch at Sushiro Asakusa Azumabashi"
+            },
+            {
+              "time": "Afternoon",
+              "emoji": "🗼",
+              "title": "Walk to Tokyo Sky Tree"
+            },
+            {
+              "time": "Afternoon",
+              "emoji": "🛍️",
+              "title": "Explore Tokyo Solamachi"
+            },
+            {
+              "time": "Afternoon",
+              "emoji": "🍳",
+              "title": "Explore Kappabashi Street"
+            },
+            {
+              "time": "Dinner",
+              "emoji": "🍲",
+              "title": "Dinner at Mo Mo Paradise Asakusa",
+              "note": "Sukiyaki & Shabu Shabu"
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "city": "Kyoto",
+          "title": "Temples & Gion",
+          "activities": [
+            {
+              "time": "Morning",
+              "emoji": "🚅",
+              "title": "Arrive at Kyoto Station"
+            },
+            {
+              "time": "Morning",
+              "emoji": "⛩️",
+              "title": "Walk through the red torii gates at Fushimi Inari Taisha Shrine"
+            },
+            {
+              "time": "Morning",
+              "emoji": "☕",
+              "title": "Take a coffee break at Vermillion Cafe"
+            },
+            {
+              "time": "Late Morning",
+              "emoji": "🏯",
+              "title": "Visit Tofukuji Temple"
+            },
+            {
+              "time": "Afternoon",
+              "emoji": "🏮",
+              "title": "Explore the old streets of Gion"
+            },
+            {
+              "time": "Lunch",
+              "emoji": "🍜",
+              "title": "Lunch at Gion Duck Noodles"
+            },
+            {
+              "time": "Afternoon",
+              "emoji": "⛩️",
+              "title": "Stop by Yasaka Shrine"
+            },
+            {
+              "time": "Evening",
+              "emoji": "🌅",
+              "title": "Sunset view from Kiyomizu-dera",
+              "note": "Breathtaking!"
+            },
+            {
+              "time": "Dinner",
+              "emoji": "🍱",
+              "title": "Dinner in Pontocho Fujita",
+              "note": "Kaiseki Restaurant"
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "city": "Kyoto",
+          "title": "Arashiyama & Departure",
+          "activities": [
+            {
+              "time": "Early Morning",
+              "emoji": "🌿",
+              "title": "Early morning at Arashiyama Bamboo Grove"
+            },
+            {
+              "time": "Morning",
+              "emoji": "🏞️",
+              "title": "Cross the Togetsukyo Bridge"
+            },
+            {
+              "time": "Morning",
+              "emoji": "☕",
+              "title": "Try Kyoto Latte at % ARABICA Arashiyama"
+            },
+            {
+              "time": "Late Morning",
+              "emoji": "✨",
+              "title": "Visit Kinkaku-ji Temple"
+            },
+            {
+              "time": "Late Morning",
+              "emoji": "🏛️",
+              "title": "Walk through Ryoan-ji's zen rock garden"
+            },
+            {
+              "time": "Lunch",
+              "emoji": "🍲",
+              "title": "Lunch at Seigenin",
+              "note": "Tofu hot pot"
+            },
+            {
+              "time": "Afternoon",
+              "emoji": "🚶",
+              "title": "Stroll the Philosopher's Path"
+            },
+            {
+              "time": "Afternoon",
+              "emoji": "⛩️",
+              "title": "Stop at Nanzen-ji Temple"
+            },
+            {
+              "time": "Afternoon",
+              "emoji": "🗼",
+              "title": "Explore Kyoto tower and Kyoto station"
+            },
+            {
+              "time": "Dinner",
+              "emoji": "🐟",
+              "title": "Dinner at Fish and 7 Totosebun Kyoto Station"
+            },
+            {
+              "time": "Evening",
+              "emoji": "🚅",
+              "title": "Train to Osaka"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

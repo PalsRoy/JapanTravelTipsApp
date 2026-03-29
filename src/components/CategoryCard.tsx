@@ -4,13 +4,11 @@ import {
   Text,
   TouchableOpacity,
   StyleSheet,
-  Dimensions,
+  useWindowDimensions,
+  Platform,
 } from 'react-native';
 import { Category } from '../types';
-import { Theme } from '../theme';
-
-const { width } = Dimensions.get('window');
-const CARD_WIDTH = width * 0.44;
+import { Theme, glassCard } from '../theme';
 
 interface CategoryCardProps {
   category: Category;
@@ -23,74 +21,83 @@ export default function CategoryCard({
   theme,
   onPress,
 }: CategoryCardProps) {
+  const { width } = useWindowDimensions();
+  const cardWidth = (width - 48) / 2;
+
   return (
     <TouchableOpacity
       style={[
         styles.card,
-        {
-          backgroundColor: theme.surface,
-          borderColor: theme.border,
-          shadowColor: theme.cardShadow,
-        },
+        glassCard(theme),
+        { borderRadius: 20, width: cardWidth },
       ]}
       onPress={onPress}
       activeOpacity={0.7}
     >
-      <View
-        style={[styles.iconContainer, { backgroundColor: category.color + '18' }]}
-      >
+      {/* Accent glow at top */}
+      <View style={[styles.glowBar, { backgroundColor: category.color + '40' }]} />
+
+      <View style={[styles.iconContainer, { backgroundColor: category.color + '20' }]}>
         <Text style={styles.icon}>{category.icon}</Text>
       </View>
+
       <Text style={[styles.title, { color: theme.text }]} numberOfLines={2}>
         {category.title}
       </Text>
-      <Text style={[styles.count, { color: theme.textSecondary }]}>
+      <Text style={[styles.count, { color: theme.textTertiary }]}>
         {category.tips.length} {category.tips.length === 1 ? 'tip' : 'tips'}
       </Text>
-      <View style={[styles.colorBar, { backgroundColor: category.color }]} />
+
+      {/* Bottom accent line */}
+      <View style={[styles.accentLine, { backgroundColor: category.color }]} />
     </TouchableOpacity>
   );
 }
 
 const styles = StyleSheet.create({
   card: {
-    width: CARD_WIDTH,
-    borderRadius: 16,
-    padding: 16,
+    padding: 18,
     marginBottom: 12,
-    borderWidth: 1,
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.06,
-    shadowRadius: 8,
-    elevation: 2,
     overflow: 'hidden',
+    position: 'relative',
+  },
+  glowBar: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    height: 60,
+    opacity: 0.5,
   },
   iconContainer: {
-    width: 48,
-    height: 48,
+    width: 46,
+    height: 46,
     borderRadius: 14,
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 12,
+    marginBottom: 14,
   },
   icon: {
-    fontSize: 24,
+    fontSize: 22,
   },
   title: {
     fontSize: 15,
     fontWeight: '700',
     marginBottom: 4,
     lineHeight: 20,
+    letterSpacing: -0.2,
   },
   count: {
-    fontSize: 13,
+    fontSize: 12,
     fontWeight: '500',
   },
-  colorBar: {
+  accentLine: {
     position: 'absolute',
     bottom: 0,
-    left: 0,
-    right: 0,
-    height: 3,
+    left: 20,
+    right: 20,
+    height: 2,
+    borderRadius: 1,
+    opacity: 0.6,
   },
 });

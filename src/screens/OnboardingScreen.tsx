@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   Image,
   ViewToken,
+  Platform,
 } from 'react-native';
 import { useAppTheme } from '../theme';
 
@@ -49,9 +50,7 @@ export default function OnboardingScreen({ onComplete }: OnboardingScreenProps) 
     []
   );
 
-  const viewabilityConfig = useRef({
-    viewAreaCoveragePercentThreshold: 50,
-  }).current;
+  const viewabilityConfig = useRef({ viewAreaCoveragePercentThreshold: 50 }).current;
 
   const handleNext = () => {
     if (activeIndex < SLIDES.length - 1) {
@@ -63,6 +62,10 @@ export default function OnboardingScreen({ onComplete }: OnboardingScreenProps) 
 
   return (
     <View style={[styles.container, { backgroundColor: theme.background }]}>
+      {/* Background glows */}
+      <View style={styles.glow1} />
+      <View style={styles.glow2} />
+
       <FlatList
         ref={flatListRef}
         data={SLIDES}
@@ -83,9 +86,7 @@ export default function OnboardingScreen({ onComplete }: OnboardingScreenProps) 
         )}
       />
 
-      {/* Bottom controls */}
       <View style={styles.bottomContainer}>
-        {/* Dots */}
         <View style={styles.dots}>
           {SLIDES.map((_, i) => (
             <View
@@ -93,17 +94,27 @@ export default function OnboardingScreen({ onComplete }: OnboardingScreenProps) 
               style={[
                 styles.dot,
                 {
-                  backgroundColor: i === activeIndex ? '#E84393' : theme.border,
+                  backgroundColor: i === activeIndex ? '#FF2D78' : theme.border,
                   width: i === activeIndex ? 24 : 8,
+                },
+                i === activeIndex && Platform.OS === 'ios' && {
+                  shadowColor: '#FF2D78',
+                  shadowOffset: { width: 0, height: 0 },
+                  shadowOpacity: 0.6,
+                  shadowRadius: 6,
                 },
               ]}
             />
           ))}
         </View>
 
-        {/* Button */}
         <TouchableOpacity
-          style={styles.button}
+          style={[styles.button, Platform.OS === 'ios' && {
+            shadowColor: '#FF2D78',
+            shadowOffset: { width: 0, height: 4 },
+            shadowOpacity: 0.4,
+            shadowRadius: 12,
+          }]}
           onPress={handleNext}
           activeOpacity={0.8}
         >
@@ -112,12 +123,9 @@ export default function OnboardingScreen({ onComplete }: OnboardingScreenProps) 
           </Text>
         </TouchableOpacity>
 
-        {/* Skip */}
         {activeIndex < SLIDES.length - 1 && (
           <TouchableOpacity onPress={onComplete} style={styles.skipButton}>
-            <Text style={[styles.skipText, { color: theme.textTertiary }]}>
-              Skip
-            </Text>
+            <Text style={[styles.skipText, { color: theme.textTertiary }]}>Skip</Text>
           </TouchableOpacity>
         )}
       </View>
@@ -126,8 +134,24 @@ export default function OnboardingScreen({ onComplete }: OnboardingScreenProps) 
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+  container: { flex: 1 },
+  glow1: {
+    position: 'absolute',
+    top: '10%',
+    left: -60,
+    width: 200,
+    height: 200,
+    borderRadius: 100,
+    backgroundColor: 'rgba(255, 45, 120, 0.08)',
+  },
+  glow2: {
+    position: 'absolute',
+    top: '40%',
+    right: -80,
+    width: 250,
+    height: 250,
+    borderRadius: 125,
+    backgroundColor: 'rgba(0, 229, 255, 0.05)',
   },
   slide: {
     width,
@@ -137,8 +161,8 @@ const styles = StyleSheet.create({
     paddingTop: height * 0.1,
   },
   image: {
-    width: width * 0.6,
-    height: width * 0.6,
+    width: width * 0.55,
+    height: width * 0.55,
     marginBottom: 40,
   },
   title: {
@@ -146,7 +170,7 @@ const styles = StyleSheet.create({
     fontWeight: '800',
     textAlign: 'center',
     marginBottom: 12,
-    letterSpacing: -0.3,
+    letterSpacing: -0.5,
   },
   subtitle: {
     fontSize: 16,
@@ -163,28 +187,16 @@ const styles = StyleSheet.create({
     gap: 6,
     marginBottom: 32,
   },
-  dot: {
-    height: 8,
-    borderRadius: 4,
-  },
+  dot: { height: 8, borderRadius: 4 },
   button: {
-    backgroundColor: '#E84393',
+    backgroundColor: '#FF2D78',
     paddingVertical: 16,
     paddingHorizontal: 48,
-    borderRadius: 14,
+    borderRadius: 16,
     width: '100%',
     alignItems: 'center',
   },
-  buttonText: {
-    color: '#FFFFFF',
-    fontSize: 17,
-    fontWeight: '700',
-  },
-  skipButton: {
-    marginTop: 16,
-    padding: 8,
-  },
-  skipText: {
-    fontSize: 15,
-  },
+  buttonText: { color: '#FFFFFF', fontSize: 17, fontWeight: '700' },
+  skipButton: { marginTop: 16, padding: 8 },
+  skipText: { fontSize: 15 },
 });
