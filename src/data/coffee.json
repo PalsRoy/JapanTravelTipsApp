@@ -1,0 +1,84 @@
+{
+  "coffeeGuide": {
+    "id": "coffee-guide",
+    "title": "Coffee Guide",
+    "subtitle": "Best cafés in Tokyo & Kyoto",
+    "icon": "☕",
+    "cities": [
+      {
+        "city": "Tokyo",
+        "spots": [
+          {
+            "id": "blue-bottle-tokyo",
+            "name": "Blue Bottle Coffee",
+            "neighborhood": "Kiyosumi-Shirakawa",
+            "description": "The iconic third-wave coffee roaster's flagship Japan location. Set in a converted warehouse in the artsy Kiyosumi-Shirakawa district, Blue Bottle brings its minimalist California aesthetic to Tokyo. Known for perfectly executed pour-overs and single-origin espressos. Arrive early on weekends — the line can stretch around the block.",
+            "mustTry": "Single Origin Pour Over",
+            "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=400&fit=crop"
+          },
+          {
+            "id": "fuglen-tokyo",
+            "name": "Fuglen Coffee",
+            "neighborhood": "Tomigaya / Shibuya",
+            "description": "A slice of Oslo in Tokyo. This Norwegian import doubles as a coffee shop by day and cocktail bar by night, filled with vintage Scandinavian furniture that's actually for sale. The laid-back Tomigaya neighborhood adds to the charm. Their light-roast filter coffee is some of the best in the city.",
+            "mustTry": "Filter Coffee & Cinnamon Bun",
+            "image": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&h=400&fit=crop"
+          },
+          {
+            "id": "onibus-tokyo",
+            "name": "Onibus Coffee",
+            "neighborhood": "Nakameguro",
+            "description": "A beloved local roaster tucked away in the trendy Nakameguro area, right by the canal famous for cherry blossoms. The tiny wooden shopfront opens up to a cozy interior where every cup is crafted with care. Their beans are roasted in-house and the baristas are passionate about explaining each origin.",
+            "mustTry": "Flat White",
+            "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&h=400&fit=crop"
+          },
+          {
+            "id": "bread-espresso-tokyo",
+            "name": "Bread, Espresso &",
+            "neighborhood": "Omotesando",
+            "description": "Don't let the simple name fool you — this Omotesando gem is a destination for both incredible artisan bread and expertly pulled espresso. The French toast made with their signature Mu bread is legendary. Tucked down a quiet side street away from the Omotesando crowds, it feels like a secret find.",
+            "mustTry": "French Toast with Mu Bread",
+            "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&h=400&fit=crop"
+          }
+        ]
+      },
+      {
+        "city": "Kyoto",
+        "spots": [
+          {
+            "id": "le-labo-kyoto",
+            "name": "LE LABO CAFE KYOTO MACHIYA",
+            "neighborhood": "Central Kyoto",
+            "description": "A tranquil cup of aromatic café latte in a renovated Machiya-style storehouse. Located in a renovated sake brewery over 140 years old, this café welcomes you through a traditional noren curtain and a heavy wooden door, showcasing the unique beams and pillars of the original brewery. The blend of historic architecture and modern coffee culture creates an unforgettable atmosphere.",
+            "mustTry": "Café Latte",
+            "image": "https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=600&h=400&fit=crop"
+          },
+          {
+            "id": "beatle-momo-kyoto",
+            "name": "Beatle Momo",
+            "neighborhood": "Kyoto",
+            "description": "More than just a café — Beatle Momo is a cozy vinyl bar and restaurant with a welcoming atmosphere and an extensive record collection. A unique destination where music lovers and food enthusiasts come together. Spin through their vinyl collection while enjoying a perfectly brewed coffee or a craft cocktail in the evening.",
+            "mustTry": "Coffee & Vinyl Vibes",
+            "image": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&h=400&fit=crop"
+          },
+          {
+            "id": "weekenders-kyoto",
+            "name": "WEEKENDERS COFFEE TOMINOKOJI",
+            "neighborhood": "Honeyanochō",
+            "description": "Nestled in the heart of Kyoto, this hidden gem beckons coffee enthusiasts and casual sippers alike. Located at 560 Honeyanochō, it offers an intimate setting where every cup tells a story. The exceptional brews and minimalist Japanese aesthetic invite you to savor the moment amidst the bustling city. A must-visit for anyone who takes their coffee seriously.",
+            "mustTry": "Hand-drip Single Origin",
+            "image": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&h=400&fit=crop"
+          },
+          {
+            "id": "arabica-kyoto",
+            "name": "% ARABICA Kyoto Higashiyama",
+            "neighborhood": "Higashiyama",
+            "description": "The original location of the now world-famous % ARABICA chain, perched right along the path to Kiyomizu-dera. The minimal white-and-wood interior frames a stunning view of the Yasaka Pagoda. Come for the Instagram-worthy setting, stay for the genuinely excellent espresso and latte art.",
+            "mustTry": "Kyoto Latte",
+            "image": "https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=600&h=400&fit=crop"
+          }
+        ]
+      }
+    ]
+  }
+}

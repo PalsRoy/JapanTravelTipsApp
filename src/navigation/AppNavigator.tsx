@@ -8,6 +8,7 @@ import HomeScreen from '../screens/HomeScreen';
 import CategoryScreen from '../screens/CategoryScreen';
 import ItineraryListScreen from '../screens/ItineraryListScreen';
 import ItineraryDetailScreen from '../screens/ItineraryDetailScreen';
+import CoffeeScreen from '../screens/CoffeeScreen';
 
 import { TipsStackParamList, ItineraryStackParamList } from './types';
 
@@ -66,7 +67,6 @@ export default function AppNavigator() {
           paddingTop: 8,
           height: 90,
           ...(Platform.OS === 'ios' ? {
-            // Blur effect simulation
             shadowColor: '#000',
             shadowOffset: { width: 0, height: -8 },
             shadowOpacity: 0.3,
@@ -76,7 +76,7 @@ export default function AppNavigator() {
           }),
         },
         tabBarLabelStyle: {
-          fontSize: 11,
+          fontSize: 10,
           fontWeight: '600',
           marginTop: 4,
           letterSpacing: 0.3,
@@ -97,6 +97,14 @@ export default function AppNavigator() {
         options={{
           tabBarLabel: 'Itineraries',
           tabBarIcon: ({ focused }) => <TabIcon emoji="🗺️" focused={focused} />,
+        }}
+      />
+      <Tab.Screen
+        name="CoffeeTab"
+        component={CoffeeScreen}
+        options={{
+          tabBarLabel: 'Coffee',
+          tabBarIcon: ({ focused }) => <TabIcon emoji="☕" focused={focused} />,
         }}
       />
     </Tab.Navigator>

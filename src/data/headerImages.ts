@@ -19,6 +19,7 @@ const headerImages: Record<string, any> = {
   'food-tips': require('../../assets/headers/food-tips.png'),
   'smart-living': require('../../assets/headers/smart-living.png'),
   'during-your-trip': require('../../assets/headers/during-your-trip.png'),
+  'japanese-phrases': require('../../assets/headers/japanese-phrases.png'),
 };
 
 export function getHeaderImage(categoryId: string) {

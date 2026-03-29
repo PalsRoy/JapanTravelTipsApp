@@ -1,0 +1,110 @@
+{
+  "phrasebook": {
+    "id": "phrasebook",
+    "title": "Japanese Phrases",
+    "subtitle": "Essential words for your trip",
+    "icon": "🗣️",
+    "culturalNote": "Japanese people often say \"no\" to be polite or avoid confrontation, even if they actually mean \"yes\" — so it's important to read the room and pay attention to non-verbal cues!",
+    "categories": [
+      {
+        "id": "basics",
+        "title": "Basics",
+        "emoji": "👋",
+        "color": "#FF2D78",
+        "phrases": [
+          { "japanese": "こんにちは", "romaji": "Konnichiwa", "english": "Hello", "note": "Used during daytime" },
+          { "japanese": "おはようございます", "romaji": "Ohayou gozaimasu", "english": "Good morning", "note": "Polite form — drop gozaimasu with friends" },
+          { "japanese": "こんばんは", "romaji": "Konbanwa", "english": "Good evening", "note": "" },
+          { "japanese": "はい", "romaji": "Hai", "english": "Yes", "note": "" },
+          { "japanese": "いいえ", "romaji": "Iie", "english": "No", "note": "" },
+          { "japanese": "ありがとうございます", "romaji": "Arigatou gozaimasu", "english": "Thank you", "note": "The most important phrase you'll use!" },
+          { "japanese": "すみません", "romaji": "Sumimasen", "english": "Excuse me / Sorry", "note": "Use to get attention or apologize" },
+          { "japanese": "お願いします", "romaji": "Onegaishimasu", "english": "Please", "note": "Add after any request" },
+          { "japanese": "さようなら", "romaji": "Sayounara", "english": "Goodbye", "note": "Formal — じゃね (ja ne) is casual" }
+        ]
+      },
+      {
+        "id": "restaurant",
+        "title": "At Restaurants",
+        "emoji": "🍜",
+        "color": "#00E5FF",
+        "phrases": [
+          { "japanese": "いただきます", "romaji": "Itadakimasu", "english": "Let's eat / Bon appétit", "note": "Say before eating — shows gratitude" },
+          { "japanese": "ごちそうさまでした", "romaji": "Gochisousama deshita", "english": "Thank you for the meal", "note": "Say after eating — very polite!" },
+          { "japanese": "メニューをお願いします", "romaji": "Menyuu o onegaishimasu", "english": "Menu, please", "note": "" },
+          { "japanese": "これをください", "romaji": "Kore o kudasai", "english": "This one, please", "note": "Point at item while saying it" },
+          { "japanese": "お会計お願いします", "romaji": "Okaikei onegaishimasu", "english": "Check, please", "note": "" },
+          { "japanese": "おいしい！", "romaji": "Oishii!", "english": "Delicious!", "note": "Staff love hearing this!" },
+          { "japanese": "アレルギーがあります", "romaji": "Arerugii ga arimasu", "english": "I have an allergy", "note": "Important for food safety" },
+          { "japanese": "ベジタリアンです", "romaji": "Bejitarian desu", "english": "I'm vegetarian", "note": "" }
+        ]
+      },
+      {
+        "id": "shopping",
+        "title": "Shopping",
+        "emoji": "🛍️",
+        "color": "#FDCB6E",
+        "phrases": [
+          { "japanese": "いくらですか？", "romaji": "Ikura desu ka?", "english": "How much is this?", "note": "" },
+          { "japanese": "高い", "romaji": "Takai", "english": "Expensive", "note": "" },
+          { "japanese": "安い", "romaji": "Yasui", "english": "Cheap", "note": "" },
+          { "japanese": "免税できますか？", "romaji": "Menzei dekimasu ka?", "english": "Can I get tax-free?", "note": "Show your passport!" },
+          { "japanese": "カードで払えますか？", "romaji": "Kaado de haraemasu ka?", "english": "Can I pay by card?", "note": "" },
+          { "japanese": "袋をお願いします", "romaji": "Fukuro o onegaishimasu", "english": "A bag, please", "note": "Bags often cost ¥3-5" },
+          { "japanese": "見ているだけです", "romaji": "Miteiru dake desu", "english": "Just looking", "note": "Polite way to browse" }
+        ]
+      },
+      {
+        "id": "transport",
+        "title": "Getting Around",
+        "emoji": "🚆",
+        "color": "#6C5CE7",
+        "phrases": [
+          { "japanese": "〜はどこですか？", "romaji": "~ wa doko desu ka?", "english": "Where is ~?", "note": "Fill in the place name" },
+          { "japanese": "駅はどこですか？", "romaji": "Eki wa doko desu ka?", "english": "Where is the station?", "note": "" },
+          { "japanese": "トイレはどこですか？", "romaji": "Toire wa doko desu ka?", "english": "Where is the toilet?", "note": "Very useful!" },
+          { "japanese": "右", "romaji": "Migi", "english": "Right", "note": "" },
+          { "japanese": "左", "romaji": "Hidari", "english": "Left", "note": "" },
+          { "japanese": "まっすぐ", "romaji": "Massugu", "english": "Straight ahead", "note": "" },
+          { "japanese": "近い", "romaji": "Chikai", "english": "Near / Close", "note": "" },
+          { "japanese": "遠い", "romaji": "Tooi", "english": "Far", "note": "" },
+          { "japanese": "この電車は〜に行きますか？", "romaji": "Kono densha wa ~ ni ikimasu ka?", "english": "Does this train go to ~?", "note": "" }
+        ]
+      },
+      {
+        "id": "emergency",
+        "title": "Emergency & Help",
+        "emoji": "🆘",
+        "color": "#D63031",
+        "phrases": [
+          { "japanese": "助けてください", "romaji": "Tasukete kudasai", "english": "Please help me", "note": "" },
+          { "japanese": "英語を話せますか？", "romaji": "Eigo o hanasemasu ka?", "english": "Do you speak English?", "note": "" },
+          { "japanese": "わかりません", "romaji": "Wakarimasen", "english": "I don't understand", "note": "" },
+          { "japanese": "もう一度お願いします", "romaji": "Mou ichido onegaishimasu", "english": "One more time, please", "note": "Ask them to repeat" },
+          { "japanese": "ゆっくりお願いします", "romaji": "Yukkuri onegaishimasu", "english": "Slowly, please", "note": "" },
+          { "japanese": "病院", "romaji": "Byouin", "english": "Hospital", "note": "" },
+          { "japanese": "警察", "romaji": "Keisatsu", "english": "Police", "note": "Emergency: 110" },
+          { "japanese": "救急車", "romaji": "Kyuukyuusha", "english": "Ambulance", "note": "Emergency: 119" }
+        ]
+      },
+      {
+        "id": "numbers",
+        "title": "Numbers",
+        "emoji": "🔢",
+        "color": "#00B894",
+        "phrases": [
+          { "japanese": "一 (いち)", "romaji": "Ichi", "english": "1", "note": "" },
+          { "japanese": "二 (に)", "romaji": "Ni", "english": "2", "note": "" },
+          { "japanese": "三 (さん)", "romaji": "San", "english": "3", "note": "" },
+          { "japanese": "四 (よん)", "romaji": "Yon", "english": "4", "note": "" },
+          { "japanese": "五 (ご)", "romaji": "Go", "english": "5", "note": "" },
+          { "japanese": "六 (ろく)", "romaji": "Roku", "english": "6", "note": "" },
+          { "japanese": "七 (なな)", "romaji": "Nana", "english": "7", "note": "" },
+          { "japanese": "八 (はち)", "romaji": "Hachi", "english": "8", "note": "" },
+          { "japanese": "九 (きゅう)", "romaji": "Kyuu", "english": "9", "note": "" },
+          { "japanese": "十 (じゅう)", "romaji": "Juu", "english": "10", "note": "" }
+        ]
+      }
+    ]
+  }
+}

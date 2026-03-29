@@ -459,6 +459,50 @@
           "content": "Go to Game Panic instead of GiGO or Taito Station — it's cheaper & tends to have better prizes and more fun!"
         }
       ]
+    },
+    {
+      "id": "japanese-phrases",
+      "title": "Japanese Phrases",
+      "icon": "🗣️",
+      "color": "#7C3AED",
+      "tips": [
+        {
+          "id": "basics",
+          "title": "Basics",
+          "emoji": "👋",
+          "content": "こんにちは (Konnichiwa) — Hello\nおはようございます (Ohayou gozaimasu) — Good morning\nこんばんは (Konbanwa) — Good evening\nはい (Hai) — Yes\nいいえ (Iie) — No\nありがとうございます (Arigatou gozaimasu) — Thank you\nすみません (Sumimasen) — Excuse me / Sorry\nお願いします (Onegaishimasu) — Please\nさようなら (Sayounara) — Goodbye\n\nNote: Japanese people often say \"no\" to be polite or avoid confrontation, even if they actually mean \"yes\" — so it's important to read the room and pay attention to non-verbal cues!"
+        },
+        {
+          "id": "restaurant-phrases",
+          "title": "At Restaurants",
+          "emoji": "🍜",
+          "content": "いただきます (Itadakimasu) — Let's eat / Bon appétit (say before eating — shows gratitude)\nごちそうさまでした (Gochisousama deshita) — Thank you for the meal (say after eating)\nメニューをお願いします (Menyuu o onegaishimasu) — Menu, please\nこれをください (Kore o kudasai) — This one, please (point at item)\nお会計お願いします (Okaikei onegaishimasu) — Check, please\nおいしい！(Oishii!) — Delicious! (staff love hearing this!)\nアレルギーがあります (Arerugii ga arimasu) — I have an allergy\nベジタリアンです (Bejitarian desu) — I'm vegetarian"
+        },
+        {
+          "id": "shopping-phrases",
+          "title": "Shopping",
+          "emoji": "🛍️",
+          "content": "いくらですか？(Ikura desu ka?) — How much is this?\n高い (Takai) — Expensive\n安い (Yasui) — Cheap\n免税できますか？(Menzei dekimasu ka?) — Can I get tax-free?\nカードで払えますか？(Kaado de haraemasu ka?) — Can I pay by card?\n袋をお願いします (Fukuro o onegaishimasu) — A bag, please (bags often cost ¥3-5)\n見ているだけです (Miteiru dake desu) — Just looking"
+        },
+        {
+          "id": "transport-phrases",
+          "title": "Getting Around",
+          "emoji": "🚆",
+          "content": "〜はどこですか？(~ wa doko desu ka?) — Where is ~?\n駅はどこですか？(Eki wa doko desu ka?) — Where is the station?\nトイレはどこですか？(Toire wa doko desu ka?) — Where is the toilet?\n右 (Migi) — Right\n左 (Hidari) — Left\nまっすぐ (Massugu) — Straight ahead\n近い (Chikai) — Near\n遠い (Tooi) — Far\nこの電車は〜に行きますか？(Kono densha wa ~ ni ikimasu ka?) — Does this train go to ~?"
+        },
+        {
+          "id": "emergency-phrases",
+          "title": "Emergency & Help",
+          "emoji": "🆘",
+          "content": "助けてください (Tasukete kudasai) — Please help me\n英語を話せますか？(Eigo o hanasemasu ka?) — Do you speak English?\nわかりません (Wakarimasen) — I don't understand\nもう一度お願いします (Mou ichido onegaishimasu) — One more time, please\nゆっくりお願いします (Yukkuri onegaishimasu) — Slowly, please\n病院 (Byouin) — Hospital\n警察 (Keisatsu) — Police (Emergency: 110)\n救急車 (Kyuukyuusha) — Ambulance (Emergency: 119)"
+        },
+        {
+          "id": "numbers-phrases",
+          "title": "Numbers 1-10",
+          "emoji": "🔢",
+          "content": "一 いち (Ichi) — 1\n二 に (Ni) — 2\n三 さん (San) — 3\n四 よん (Yon) — 4\n五 ご (Go) — 5\n六 ろく (Roku) — 6\n七 なな (Nana) — 7\n八 はち (Hachi) — 8\n九 きゅう (Kyuu) — 9\n十 じゅう (Juu) — 10"
+        }
+      ]
     }
   ]
 }
