@@ -19,7 +19,8 @@
             {
               "time": "Morning",
               "emoji": "✈️",
-              "title": "Arrive at Haneda Airport"
+              "title": "Arrive at Haneda/Narita Airport",
+              "note": "Take the train or bus to your accommodation and drop off your luggage"
             },
             {
               "time": "Morning",
@@ -29,23 +30,20 @@
             {
               "time": "Late Morning",
               "emoji": "🛍️",
-              "title": "Explore Takeshita Street"
+              "title": "Explore Takeshita Street",
+              "note": "Instagrammable treats, like crepes, tornado potatoes pop “Harajuku Rainbow!"
             },
             {
               "time": "Late Morning",
               "emoji": "🛍️",
-              "title": "Shopping at Cat Street and Kiddy Land"
+              "title": "Shopping at Cat Street and Kiddy Land",
+              "note": "Cat Street is a trendy shopping street with a mix of international brands and local boutiques. Kiddy Land is a multi-story toy store with a huge selection of character goods, perfect for picking up unique souvenirs!"
             },
             {
               "time": "Lunch",
               "emoji": "🍝",
               "title": "Lunch at Menchirashi",
-              "note": "Carbonara Udon"
-            },
-            {
-              "time": "Afternoon",
-              "emoji": "🚶",
-              "title": "Walk to Shibuya and visit Miyashita Park"
+              "note": "Delicious and affordable pasta dishes in a cozy setting, mind the long lines but it’s worth the wait!"
             },
             {
               "time": "Afternoon",
@@ -55,7 +53,8 @@
             {
               "time": "Afternoon",
               "emoji": "📸",
-              "title": "Shibuya Scramble"
+              "title": "Shibuya Scramble",
+              "note": "One of the busiest pedestrian crossings in the world, a must-see for first-timers in Tokyo!"
             },
             {
               "time": "Afternoon",
@@ -64,24 +63,15 @@
               "note": "Pokemon center, Nintendo Store, Jump Shop etc."
             },
             {
-              "time": "Evening",
-              "emoji": "🌅",
-              "title": "Enjoy the sunset at Shibuya Sky"
-            },
-            {
               "time": "Dinner",
-              "emoji": "🥩",
-              "title": "Dine at Gyukatsu Motomura Shinjuku"
+              "emoji": "🍤",
+              "title": "Dine at Hakata Tempura Takao",
+              "note": "Delicious tempura fish, prawn, squid, pork and 3 vegetables with Rice, miso soup and three pickles"
             },
             {
               "time": "Night",
               "emoji": "🍻",
               "title": "Enjoy a drink in Golden Gai"
-            },
-            {
-              "time": "Night",
-              "emoji": "🛒",
-              "title": "Night Shopping at Don Quijote"
             }
           ]
         },
@@ -93,7 +83,8 @@
             {
               "time": "Breakfast",
               "emoji": "🐟",
-              "title": "Breakfast at Tsukiji Fish Market"
+              "title": "Breakfast at Tsumugi cafe in Tsukiji",
+              "note": "Shojin Ryori (Japanese temple cuisine ━ a set menu inspired by Buddhism teaching)"
             },
             {
               "time": "Morning",
@@ -108,9 +99,9 @@
             },
             {
               "time": "Lunch",
-              "emoji": "🥩",
-              "title": "Lunch at GYU-AN GINZA",
-              "note": "Affordable A5 Wagyu Beef"
+              "emoji": "🍜",
+              "title": "Lunch at 銀座 篝 大手町店",
+              "note": "Michelin rated cheap eats, easily one of the best ramen restaurant Ginza Kagari Soba"
             },
             {
               "time": "Afternoon",
@@ -134,15 +125,16 @@
             },
             {
               "time": "Dinner",
-              "emoji": "🍜",
-              "title": "Grab Ramen at Ramen Mozu"
+              "emoji": "🍢",
+              "title": "Grab Yakitori Kufuraku Ginzasohonten",
+              "note": "Authentic charcoal-grilled skewers made with Iwate Prefecture's Seiryudori chicken"
             }
           ]
         },
         {
           "dayNumber": 3,
           "city": "Tokyo",
-          "title": "Asakusa & Sky Tree",
+          "title": "Asakusa & Kimono Experience",
           "activities": [
             {
               "time": "Breakfast",
@@ -181,11 +173,6 @@
             },
             {
               "time": "Afternoon",
-              "emoji": "🛍️",
-              "title": "Explore Tokyo Solamachi"
-            },
-            {
-              "time": "Afternoon",
               "emoji": "🍳",
               "title": "Explore Kappabashi Street"
             },
@@ -194,6 +181,11 @@
               "emoji": "🍲",
               "title": "Dinner at Mo Mo Paradise Asakusa",
               "note": "Sukiyaki & Shabu Shabu"
+            },
+            {
+              "time": "Night",
+              "emoji": "🛒",
+              "title": "Night Shopping at Don Quijote"
             }
           ]
         },

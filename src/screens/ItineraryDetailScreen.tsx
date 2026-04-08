@@ -65,7 +65,7 @@ function ActivityItem({
         {/* Thumbnail */}
         {thumbnailUrl && (
           <Image
-            source={{ uri: thumbnailUrl }}
+            source={typeof thumbnailUrl === "string" ? { uri: thumbnailUrl } : thumbnailUrl}
             style={styles.thumbnail}
             resizeMode="cover"
           />

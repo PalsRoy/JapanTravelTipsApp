@@ -8,30 +8,28 @@ const UNSPLASH = 'https://source.unsplash.com';
 // These use specific Unsplash photo IDs for consistent results
 export const activityThumbnails: Record<string, string> = {
   // Day 1 - Tokyo
-  'Haneda Airport': 'https://images.unsplash.com/photo-1542931287-023b922fa89b?w=400&h=300&fit=crop',
-  'Meiji Jingu Shrine': 'https://images.unsplash.com/photo-1583766395091-2eb9994ed094?w=400&h=300&fit=crop',
+  'Haneda/Narita Airport': 'https://images.unsplash.com/photo-1674725690428-948af1d7f5a1?w=400&h=300&fit=crop',
+  'Meiji Jingu Shrine': 'https://images.unsplash.com/photo-1706441806701-c195f59728be?w=400&h=300&fit=crop',
   'Takeshita Street': 'https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=400&h=300&fit=crop',
   'Cat Street': 'https://images.unsplash.com/photo-1554797589-7241bb691973?w=400&h=300&fit=crop',
   'Menchirashi': 'https://images.unsplash.com/photo-1618841557871-b4664fbf0cb3?w=400&h=300&fit=crop',
-  'Miyashita Park': 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&h=300&fit=crop',
   'The Matcha Tokyo': 'https://images.unsplash.com/photo-1515823064-d6e0c04616a7?w=400&h=300&fit=crop',
   'Shibuya Scramble': 'https://images.unsplash.com/photo-1542931287-023b922fa89b?w=400&h=300&fit=crop',
   'Shibuya Parco': 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&h=300&fit=crop',
-  'Shibuya Sky': 'https://images.unsplash.com/photo-1513407030348-c983a97b98d8?w=400&h=300&fit=crop',
-  'Gyukatsu Motomura': 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop',
+  'Hakata Tempura Takao': 'https://images.unsplash.com/photo-1593357849627-cbbc9fda6b05?w=400&h=300&fit=crop',
   'Golden Gai': 'https://images.unsplash.com/photo-1554797589-7241bb691973?w=400&h=300&fit=crop',
-  'Don Quijote': 'https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=400&h=300&fit=crop',
 
   // Day 2 - Tokyo
-  'Tsukiji Fish Market': 'https://images.unsplash.com/photo-1553621042-f6e147245754?w=400&h=300&fit=crop',
-  'Ginza': 'https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?w=400&h=300&fit=crop',
-  'Onitsuka Tiger Ginza RED': 'https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?w=400&h=300&fit=crop',
-  'GYU-AN GINZA': 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop',
+  'Tsumugi cafe in Tsukiji': 'https://images.unsplash.com/photo-1553621042-f6e147245754?w=400&h=300&fit=crop',
+  'Onitsuka Tiger Ginza RED': 'https://images.unsplash.com/photo-1769265114498-44b36dbaff24?w=400&h=300&fit=crop',
+  'Ginza': 'https://images.unsplash.com/photo-1603444190969-48bd472d919b?w=400&h=300&fit=crop',
+  '銀座 篝 大手町店': require('../../assets/headers/ginza-kagaari.png'),
   'GINZA SIX': 'https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?w=400&h=300&fit=crop',
   'BONGEN COFFEE': 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=300&fit=crop',
   'teamLab Borderless': 'https://images.unsplash.com/photo-1549490349-8643362247b5?w=400&h=300&fit=crop',
   'Tokyo Tower': 'https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?w=400&h=300&fit=crop',
-  'Ramen Mozu': 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop',
+  'Yakitori Kufuraku Ginzasohonten':  require('../../assets/headers/yakitori-kufuraku-ginzasohonten.png'),
+  'Don Quijote': 'https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=400&h=300&fit=crop',
 
   // Day 3 - Tokyo
   'Misojyu Asakusa': 'https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=400&h=300&fit=crop',
@@ -72,7 +70,7 @@ export const activityThumbnails: Record<string, string> = {
 /**
  * Find a thumbnail URL for an activity title by matching against known locations
  */
-export function getThumbnailForActivity(title: string): string | null {
+export function getThumbnailForActivity(title: string): string | number | null {
   // Try exact key match first
   for (const [key, url] of Object.entries(activityThumbnails)) {
     if (title.includes(key)) {

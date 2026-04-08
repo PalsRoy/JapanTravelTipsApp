@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Platform } from 'react-native';
+import { View, Text, StyleSheet, Platform, ScrollView } from 'react-native';
 import { Tip } from '../types';
 import { Theme, glassCard } from '../theme';
 
@@ -45,10 +45,15 @@ export default function TipCard({
       <Text style={[styles.title, { color: theme.text }]}>{tip.title}</Text>
 
       <View style={[styles.divider, { backgroundColor: categoryColor + '25' }]} />
-
+      <ScrollView
+        style={styles.contentScroll}
+        showsVerticalScrollIndicator={true}
+        nestedScrollEnabled={true}
+      >
       <Text style={[styles.content, { color: theme.textSecondary }]}>
         {tip.content}
       </Text>
+      </ScrollView>
     </View>
   );
 }
@@ -60,6 +65,7 @@ const styles = StyleSheet.create({
     padding: 24,
     overflow: 'hidden',
     position: 'relative',
+    height: '85%'
   },
   topGlow: {
     position: 'absolute',
@@ -88,6 +94,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     paddingVertical: 4,
     borderRadius: 10,
+  },
+  contentScroll: {
+    flex: 1,
   },
   counter: {
     fontSize: 12,
