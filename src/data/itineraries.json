@@ -94,7 +94,7 @@
             {
               "time": "Morning",
               "emoji": "👟",
-              "title": "Get customized Onitsuka Tiger at Ginza RED store",
+              "title": "Get customized Onitsuka Tiger at RED store",
               "note": "Go before the store opens at 11"
             },
             {
@@ -137,9 +137,10 @@
           "title": "Asakusa & Kimono Experience",
           "activities": [
             {
-              "time": "Breakfast",
+              "time": "Early Morning",
               "emoji": "🍳",
-              "title": "Breakfast at Misojyu Asakusa"
+              "title": "Discover the elegant kimono culture in Asakusa",
+              "note": "Book the Kimono Rental via Kloop app. Visit Senso-ji Temple wearing a stunning kimono."
             },
             {
               "time": "Morning",
@@ -154,12 +155,7 @@
             {
               "time": "Late Morning",
               "emoji": "🍢",
-              "title": "Explore Nakamise Street and try street food"
-            },
-            {
-              "time": "Afternoon",
-              "emoji": "🌳",
-              "title": "Chill at Sumida Park"
+              "title": "Explore Nakamise Street and try street food and shop for souvenirs"
             },
             {
               "time": "Lunch",
@@ -169,12 +165,14 @@
             {
               "time": "Afternoon",
               "emoji": "🗼",
-              "title": "Walk to Tokyo Sky Tree"
+              "title": "Walk to LE LABO KYOTO MACHIYA",
+              "note":"Near the Kamo River, there is a little Japanese courtyard style cafe hidden within a New York-based perfume store"
             },
             {
               "time": "Afternoon",
               "emoji": "🍳",
-              "title": "Explore Kappabashi Street"
+              "title": "Explore Kappabashi Street",
+              "note": "Known as 'Kitchen Town', high-quality knives to plastic food models."
             },
             {
               "time": "Dinner",
@@ -197,7 +195,8 @@
             {
               "time": "Morning",
               "emoji": "🚅",
-              "title": "Arrive at Kyoto Station"
+              "title": "Arrive at Kyoto Station",
+              "note": "Take the Shinkansen from Tokyo to Kyoto, dont forget to buy the bento box for the train ride!"
             },
             {
               "time": "Morning",
@@ -214,15 +213,12 @@
               "emoji": "🏯",
               "title": "Visit Tofukuji Temple"
             },
-            {
-              "time": "Afternoon",
-              "emoji": "🏮",
-              "title": "Explore the old streets of Gion"
-            },
+
             {
               "time": "Lunch",
               "emoji": "🍜",
-              "title": "Lunch at Gion Duck Noodles"
+              "title": "Lunch at Katsukura Sanjo in downtown Kyoto",
+              "note": "Excellent pork Tonkatsu, plus, the Sanjo main shop in downtown Kyoto serves tasty crab croquettes and chicken cutlets."
             },
             {
               "time": "Afternoon",
@@ -232,14 +228,24 @@
             {
               "time": "Evening",
               "emoji": "🌅",
-              "title": "Sunset view from Kiyomizu-dera",
-              "note": "Breathtaking!"
+              "title": "Coffee at Starbucks Coffee Kyoto Ninenzaka Yasaka Chaya"
+            },
+            {
+              "time": "Late Evening",
+              "emoji": "🏮",
+              "title": "Explore the old streets of Gion"
             },
             {
               "time": "Dinner",
               "emoji": "🍱",
-              "title": "Dinner in Pontocho Fujita",
-              "note": "Kaiseki Restaurant"
+              "title": "Dinner in Okonomiyaki JUJU Kyoto Gion",
+              "note": "Hidden gem in Gion, delicious okonomiyaki and yakisoba and watch a man with true passion for his craft at work."
+            },
+            {
+              "time": "Night",
+              "emoji": "🍶",
+              "title": "Enjoy a drink at Beatle momo record Bar",
+              "note": "A bar with a vinyl record theme, Amazing atmosphere with an incredible vinyl DJ spinning customer requests. Drinks are creative, reservation required."
             }
           ]
         },
@@ -255,18 +261,13 @@
             },
             {
               "time": "Morning",
-              "emoji": "🏞️",
+              "emoji": "⛩️",
               "title": "Cross the Togetsukyo Bridge"
             },
             {
               "time": "Morning",
               "emoji": "☕",
               "title": "Try Kyoto Latte at % ARABICA Arashiyama"
-            },
-            {
-              "time": "Late Morning",
-              "emoji": "✨",
-              "title": "Visit Kinkaku-ji Temple"
             },
             {
               "time": "Late Morning",
@@ -288,16 +289,6 @@
               "time": "Afternoon",
               "emoji": "⛩️",
               "title": "Stop at Nanzen-ji Temple"
-            },
-            {
-              "time": "Afternoon",
-              "emoji": "🗼",
-              "title": "Explore Kyoto tower and Kyoto station"
-            },
-            {
-              "time": "Dinner",
-              "emoji": "🐟",
-              "title": "Dinner at Fish and 7 Totosebun Kyoto Station"
             },
             {
               "time": "Evening",
