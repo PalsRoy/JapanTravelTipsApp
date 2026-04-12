@@ -65,4 +65,4 @@ Everyone / 4+
 
 
 ## Privacy Policy URL
-(Host your privacy-policy.html and paste the URL here)
+[(https://palsroy.github.io/JapanTravelTipsApp/privacy-policy.html)]
