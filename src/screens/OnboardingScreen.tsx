@@ -17,7 +17,7 @@ const { width, height } = Dimensions.get('window');
 const SLIDES = [
   {
     image: require('../../assets/onboarding/onboarding_1.png'),
-    title: 'Welcome to Japan Tips',
+    title: '"Welcome to Nihon',
     subtitle: 'Everything you need to know before, during, and after your trip to Japan',
   },
   {

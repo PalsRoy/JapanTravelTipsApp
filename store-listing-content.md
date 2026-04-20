@@ -1,7 +1,7 @@
-# Tips for Japan — Store Listing Content
+# Nihon: Japan Travel Tips — Store Listing Content
 
 ## App Name
-Tips for Japan
+Nihon: Japan Travel Tips
 
 ## Short Description (Play Store — 80 chars max)
 60+ travel tips, itineraries, coffee guide & Japanese phrases. Works offline.

@@ -1,12 +1,11 @@
 {
   "expo": {
-    "name": "Tips for Japan",
+    "name": "Nihon: Japan Travel Tips",
     "slug": "japan-tips",
-    "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
-    "newArchEnabled": false,
+    "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
@@ -14,8 +13,11 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.yourname.japantips",
-      "buildNumber": "1"
+      "bundleIdentifier": "com.palsroy.nihon",
+      "buildNumber": "1",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
