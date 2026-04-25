@@ -3,22 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nihon — LinkedIn Card Editor</title>
+<title>Nihon — Instagram Card Editor</title>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
-    background: #0a0a1a;
-    color: #f2f0ff;
+    background: #0a0a1a; color: #f2f0ff;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 20px;
+    min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 40px 20px;
   }
   .controls {
-    max-width: 1200px; width: 100%; margin-bottom: 24px;
+    max-width: 1080px; width: 100%; margin-bottom: 24px;
     display: flex; gap: 12px; flex-wrap: wrap; align-items: center;
   }
   .controls button {
@@ -32,16 +27,16 @@
   .hint { color: rgba(242,240,255,0.4); font-size: 13px; margin-left: auto; }
   .file-input { display: none; }
 
-  /* ─── CARD 1200x627 ─── */
+  /* ─── CARD 1080x1080 ─── */
   .card-wrapper {
-    width: 1200px; height: 627px;
+    width: 1080px; height: 1080px;
     position: relative; overflow: hidden; border-radius: 8px;
     border: 1px solid rgba(255,255,255,0.08);
   }
   .card {
     width: 100%; height: 100%; position: relative;
-    background: linear-gradient(135deg, #05050f 0%, #0d0820 50%, #120a1e 100%);
-    display: flex;
+    background: linear-gradient(160deg, #05050f 0%, #0d0820 40%, #120a1e 100%);
+    display: flex; flex-direction: column;
   }
   .card::before {
     content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
@@ -53,89 +48,84 @@
   }
   .glow-1 {
     position: absolute; width: 500px; height: 500px;
-    background: radial-gradient(circle, rgba(255,45,120,0.08) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255,45,120,0.07) 0%, transparent 70%);
     top: -200px; right: -100px; pointer-events: none;
   }
   .glow-2 {
     position: absolute; width: 400px; height: 400px;
     background: radial-gradient(circle, rgba(0,229,255,0.04) 0%, transparent 70%);
-    bottom: -150px; left: -100px; pointer-events: none;
+    bottom: -100px; left: -100px; pointer-events: none;
   }
 
-  /* ─── THREE COLUMN LAYOUT ─── */
-  .col-left {
-    width: 420px; padding: 45px 30px 35px 50px;
-    display: flex; flex-direction: column; position: relative; z-index: 2;
-  }
-  .col-center {
-    width: 340px; display: flex; flex-direction: column;
-    align-items: center; justify-content: center;
-    position: relative; z-index: 2; padding: 30px 10px;
-  }
-  .col-right {
-    flex: 1; display: flex; align-items: center; justify-content: center;
+  /* ─── TOP SECTION ─── */
+  .top-section {
+    padding: 50px 60px 30px;
     position: relative; z-index: 2;
   }
-
   .announce {
-    font-size: 11px; font-weight: 700; color: #ff2d78;
+    font-size: 12px; font-weight: 700; color: #ff2d78;
     letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 14px;
   }
   .app-name {
-    font-size: 52px; font-weight: 800; color: #f2f0ff;
-    line-height: 1.0; letter-spacing: -1.5px; margin-bottom: 6px;
+    font-size: 62px; font-weight: 800; color: #f2f0ff;
+    line-height: 1.0; letter-spacing: -2px; margin-bottom: 6px;
   }
   .app-subtitle {
-    font-size: 20px; font-weight: 500; color: #ffb7c5; margin-bottom: 16px;
+    font-size: 24px; font-weight: 500; color: #ffb7c5; margin-bottom: 16px;
   }
-  .divider { width: 40px; height: 2px; background: #ff2d78; margin-bottom: 14px; }
+  .divider { width: 45px; height: 2px; background: #ff2d78; margin-bottom: 16px; }
   .description {
-    font-size: 14px; line-height: 1.7; color: rgba(242,240,255,0.5);
-    margin-bottom: 20px; max-width: 360px;
+    font-size: 16px; line-height: 1.7; color: rgba(242,240,255,0.5); margin-bottom: 20px;
   }
-  .features { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 20px; }
+  .features { display: flex; flex-wrap: wrap; gap: 8px; }
   .pill {
-    padding: 5px 12px; border-radius: 7px; font-size: 11px; font-weight: 600;
+    padding: 7px 16px; border-radius: 8px; font-size: 13px; font-weight: 600;
     background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10);
     color: rgba(242,240,255,0.7);
   }
-  .tagline {
-    margin-top: auto; font-size: 11px; color: rgba(242,240,255,0.2);
+
+  /* ─── BOTTOM SECTION: QR + PHONE SIDE BY SIDE ─── */
+  .bottom-section {
+    flex: 1; display: flex; align-items: center; justify-content: center;
+    gap: 60px; padding: 0 60px 40px; position: relative; z-index: 2;
   }
 
-  /* ─── QR CENTER COLUMN ─── */
+  /* QR area */
   .qr-section { display: flex; flex-direction: column; align-items: center; }
   .qr-box {
-    width: 200px; height: 200px; background: white; border-radius: 18px;
+    width: 220px; height: 220px; background: white; border-radius: 20px;
     display: flex; align-items: center; justify-content: center;
-    cursor: pointer; overflow: hidden; margin-bottom: 16px;
-    box-shadow: 0 0 40px rgba(255,45,120,0.08);
+    cursor: pointer; overflow: hidden; margin-bottom: 18px;
+    box-shadow: 0 0 50px rgba(255,45,120,0.08);
   }
-  .qr-box img { width: 100%; height: 100%; object-fit: cover; border-radius: 18px; }
-  .qr-placeholder { font-size: 13px; color: #999; text-align: center; line-height: 1.5; }
-  .qr-label { font-size: 14px; font-weight: 600; color: rgba(242,240,255,0.7); margin-bottom: 4px; }
-  .qr-sublabel { font-size: 12px; color: rgba(242,240,255,0.35); text-align: center; line-height: 1.5; margin-bottom: 12px; }
+  .qr-box img { width: 100%; height: 100%; object-fit: cover; border-radius: 20px; }
+  .qr-placeholder { font-size: 14px; color: #999; text-align: center; line-height: 1.5; }
+  .qr-label { font-size: 16px; font-weight: 600; color: rgba(242,240,255,0.7); margin-bottom: 4px; }
+  .qr-sublabel { font-size: 13px; color: rgba(242,240,255,0.35); text-align: center; line-height: 1.5; margin-bottom: 14px; }
   .free-badge {
-    padding: 6px 20px; background: #ff2d78; border-radius: 8px;
-    font-size: 13px; font-weight: 700; color: white; letter-spacing: 1.5px;
+    padding: 7px 24px; background: #ff2d78; border-radius: 8px;
+    font-size: 14px; font-weight: 700; color: white; letter-spacing: 1.5px;
   }
-  .platforms {
-    margin-top: 12px; font-size: 11px; color: rgba(242,240,255,0.3);
-  }
+  .platforms { margin-top: 12px; font-size: 12px; color: rgba(242,240,255,0.3); }
 
-  /* ─── PHONE ─── */
+  /* Phone */
   .phone-frame {
-    width: 220px; height: 450px; background: #12121e; border-radius: 30px;
+    width: 240px; height: 490px; background: #12121e; border-radius: 34px;
     border: 2px solid rgba(255,255,255,0.12); padding: 8px;
     box-shadow: 0 0 50px rgba(255,45,120,0.06), 0 20px 60px rgba(0,0,0,0.5);
   }
   .phone-screen {
-    width: 100%; height: 100%; border-radius: 22px; overflow: hidden; background: #05050f;
+    width: 100%; height: 100%; border-radius: 26px; overflow: hidden; background: #05050f;
   }
   .phone-screen img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
   .phone-screen-placeholder {
     width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
-    font-size: 12px; color: rgba(242,240,255,0.3); text-align: center; padding: 20px; cursor: pointer;
+    font-size: 13px; color: rgba(242,240,255,0.3); text-align: center; padding: 20px; cursor: pointer;
+  }
+
+  .tagline {
+    position: absolute; bottom: 18px; left: 60px;
+    font-size: 12px; color: rgba(242,240,255,0.2); z-index: 3;
   }
 
   [contenteditable="true"] { outline: none; border-radius: 4px; transition: box-shadow 0.2s; }
@@ -143,7 +133,7 @@
   [contenteditable="true"]:focus { box-shadow: 0 0 0 2px rgba(255,45,120,0.5); }
 
   .export-notice {
-    max-width: 1200px; width: 100%; margin-top: 20px; padding: 16px 20px;
+    max-width: 1080px; width: 100%; margin-top: 20px; padding: 16px 20px;
     background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
     border-radius: 10px; font-size: 13px; color: rgba(242,240,255,0.5); line-height: 1.6;
   }
@@ -157,7 +147,7 @@
   <button class="primary" onclick="exportCard()">📸 Export as PNG</button>
   <button onclick="document.getElementById('qrInput').click()">🔲 Upload QR Code</button>
   <button onclick="document.getElementById('phoneInput').click()">📱 Change Screenshot</button>
-  <span class="hint">Click any text to edit · 1200×627 for LinkedIn</span>
+  <span class="hint">Click any text to edit · 1080×1080 for Instagram</span>
 </div>
 
 <input type="file" id="qrInput" class="file-input" accept="image/*" onchange="handleQR(event)">
@@ -168,12 +158,12 @@
     <div class="glow-1"></div>
     <div class="glow-2"></div>
 
-    <div class="col-left">
+    <div class="top-section">
       <div class="announce" contenteditable="true">Now on App Store & Google Play</div>
       <div class="app-name" contenteditable="true">Nihon</div>
       <div class="app-subtitle" contenteditable="true">Japan Travel Tips</div>
       <div class="divider"></div>
-      <div class="description" contenteditable="true">Your pocket travel companion for Japan.<br>Curated from Reddit, Substacks & locals.</div>
+      <div class="description" contenteditable="true">Your pocket travel companion for Japan. Curated from Reddit, Substacks & locals.</div>
       <div class="features">
         <span class="pill" contenteditable="true">60+ Tips</span>
         <span class="pill" contenteditable="true">Itineraries</span>
@@ -181,10 +171,9 @@
         <span class="pill" contenteditable="true">Phrases</span>
         <span class="pill" contenteditable="true">Offline</span>
       </div>
-      <div class="tagline" contenteditable="true">Curated by experience. Built for travellers.</div>
     </div>
 
-    <div class="col-center">
+    <div class="bottom-section">
       <div class="qr-section">
         <div class="qr-box" onclick="document.getElementById('qrInput').click()">
           <div class="qr-placeholder" id="qrPlaceholder">Click to upload<br>QR code</div>
@@ -195,9 +184,7 @@
         <div class="free-badge" contenteditable="true">FREE</div>
         <div class="platforms" contenteditable="true">App Store · Google Play</div>
       </div>
-    </div>
 
-    <div class="col-right">
       <div class="phone-frame">
         <div class="phone-screen">
           <img id="phoneImage" src="" alt="App screenshot" style="display:none;">
@@ -207,11 +194,13 @@
         </div>
       </div>
     </div>
+
+    <div class="tagline" contenteditable="true">Curated by experience. Built for travellers.</div>
   </div>
 </div>
 
 <div class="export-notice">
-  <strong>LinkedIn format:</strong> 1200×627px. Click text to edit, upload QR + screenshot, export as PNG.<br>
+  <strong>Instagram format:</strong> 1080×1080px. Click text to edit, upload QR + screenshot, export PNG.<br>
   <strong>QR Code:</strong> Generate free at <a href="https://www.qrcode-monkey.com" target="_blank">qrcode-monkey.com</a>
 </div>
 
@@ -231,7 +220,7 @@ function handlePhone(e) {
 async function exportCard() {
   if (typeof html2canvas !== 'undefined') {
     const c = await html2canvas(document.getElementById('cardWrapper'), { scale: 2, backgroundColor: null, useCORS: true });
-    const a = document.createElement('a'); a.download = 'nihon-linkedin.png'; a.href = c.toDataURL('image/png'); a.click();
+    const a = document.createElement('a'); a.download = 'nihon-instagram.png'; a.href = c.toDataURL('image/png'); a.click();
   } else {
     const s = document.createElement('script'); s.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js'; s.onload = () => exportCard(); document.head.appendChild(s);
   }
